@@ -1,6 +1,6 @@
 const express = require('express');
 
-const {problemController} = require('../../controllers');
+const { problemController } = require('../../controllers');
 
 const problemRouter = express.Router();
 
@@ -16,7 +16,7 @@ problemRouter.post('/', problemController.addProblem);
 
 problemRouter.delete('/:id', problemController.deleteProblem);
 
-problemRouter.post('/:id', problemController.updateProblem);
+problemRouter.put('/', problemController.updateProblem);
 
 
 module.exports = problemRouter;
